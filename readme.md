@@ -52,4 +52,5 @@ Example:
 
 12. Load config
 13. Setup router
-14.
+14. Create server + Graceful Shutdown
+15.
