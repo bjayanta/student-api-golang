@@ -83,3 +83,7 @@ Example:
 - Add DB connection into `main.go` file
 
 18.
+
+### Tutorial
+
+https://www.youtube.com/watch?v=OGhQhFKvMiM&t=747s
