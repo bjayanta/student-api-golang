@@ -50,4 +50,6 @@ Example:
 - Set `struct-tags` to define serialization
 - Create `MustLoad` function to load environment
 
-12.
+12. Load config
+13. Setup router
+14.
