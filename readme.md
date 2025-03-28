@@ -67,4 +67,19 @@ Example:
 > go get -u github.com/go-playground/validator/v10
 ```
 
-17.
+- Create validation method in `response.go` named `ValidationError`
+
+17. Database connection
+
+- Create `storage.go` file into `/internal/storage`
+- Create `sqlite.go` file into `/internal/storage/sqlite`
+- Install `sqlite` driver
+
+```bash
+> go get modernc.org/sqlite
+```
+
+- Create `students` table
+- Add DB connection into `main.go` file
+
+18.

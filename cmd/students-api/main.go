@@ -12,6 +12,7 @@ import (
 
 	"github.com/bjayanta/students-api/internal/config"
 	"github.com/bjayanta/students-api/internal/http/handlers/student"
+	"github.com/bjayanta/students-api/internal/storage/sqlite"
 )
 
 func main() {
@@ -21,6 +22,12 @@ func main() {
 	cfg := config.MustLoad()
 
 	// Database setup
+	_, err := sqlite.New(cfg)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	slog.Info("Connected to database", slog.String("env", cfg.Env), slog.String("version", "1.0.0"), slog.String("storage", cfg.StoragePath))
 
 	// Setup router
 	router := http.NewServeMux()
