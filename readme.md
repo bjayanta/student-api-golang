@@ -53,4 +53,18 @@ Example:
 12. Load config
 13. Setup router
 14. Create server + Graceful Shutdown
-15.
+15. Create student handlers
+
+- Create student.go file in `/internal/handlers/student`
+- Create types.go file in `/internal/types`
+- Create response.go file in `/internal/utils/response`
+
+16. Request validation
+
+- Add new validation package `go-playground/validator`
+
+```bash
+> go get -u github.com/go-playground/validator/v10
+```
+
+17.
